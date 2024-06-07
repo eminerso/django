@@ -1,0 +1,17 @@
+{% extends "alfa.html" %}
+
+{%block body%}
+<h1> Here is Home </h1>
+
+Here the  questions :
+
+{%for question in questions %}
+<div>
+    <h2>{{question.Title}}</h2>
+    <p> {{question.Question}}</P>
+</div>
+
+{% endfor %}
+
+
+{%endblock body%}

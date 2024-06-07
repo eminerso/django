@@ -1,0 +1,14 @@
+{% extends "alfa.html" %}
+{% block body %}
+
+<form method="POST">{% csrf_token %}
+    <label for ="owner">Who Asks</label>
+    <input type="text" name="owner"> <br>
+    <label for ="title">Question Title</label>
+    <input type="text" name="title"> <br>
+    <label for ="question">Your Question</label>
+    <input type="text" name="question"> <br>
+    <input class="ask" type=submit Value="Ask">
+</form>
+
+{% endblock body %}
